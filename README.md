@@ -9,4 +9,5 @@ Contirbutors: The Harvard Architeture style MIPS machine was provided to me by m
 ** Warning ** 
   For some reason, the MIDI audio device lags on mac, but works perfectly fine on windows.
   
-The following link is a video of how the machine works: 
+The following link is a video of how the machine works: <iframe width="560" height="315" src="https://www.youtube.com/embed/w85w8RRLAOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
