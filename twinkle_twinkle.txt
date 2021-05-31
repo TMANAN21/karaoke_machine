@@ -1,0 +1,104 @@
+.data 
+  notesPointer:   .word 0x0b4
+  lyricsPointer:  .word 0
+  twinkle_lyrics: .asciz "Twinkle, twinkle, little star \nHow I wonder what you are \nUp above the world so high \nLike a diamond in the sky \nTwinkle, twinkle, little star \nHow I wonder what you are"
+  
+.text
+  addiu $2, $0, 0              # t = 0
+  la $10, notesPointer
+  lw $3, 0($10)                # start = 0b4 //The starting point of notes in memory
+  addiu $6, $0, 0x410          # end = 0x410 //The last part for notes in memory
+  la $14, lyricsPointer
+  la $15, twinkle_lyrics       
+  sw $15, 0($14)               # This stores the pointer to twinkle_lyrics onto the lyricsPointer global variable
+              
+  ifStatement: 
+  addiu $3, $3, 4              # change the start pointer to plus 4
+  sw $3, 0($10)                # store the chord pointer in memory
+  lui $4, 0x8000            
+  bgt $3, $6, endLoop          # if (start > end) then break =
+  lw $5, 0($3)                 # notes = *start
+  srl $7, $5, 16               # shift right sixteen bits to get the time 
+
+  timeStamp:
+  andi $7, $7, 0x3FFF
+  bge $2, $7, instructionMenu  # if (t >= time) then send notes to MIDI
+  addiu $2, $2, 1              # t++
+  j timeStamp 
+    
+  instructionMenu:
+  srl $7, $5, 30               # shift right 30 bits to get the instruction to weather send notes, lyrics or lights
+  li $11, 1                    # 1 means sending lyrics
+  li $12, 2                    # 2 means sending light patterns
+  beq $0, $7, notesToMIDI      # break if the instruction is 0, which means send notes to MIDI
+  beq $11, $7, lyricsToConsole # break if the instruction is 1, which means send lyrics to console
+  beq $12, $7, lights          # break if the instruction is 2, which means send light patterns
+
+  notesToMIDI:
+  sw $5, 0x10($4)              # send the notes to the MIDI
+  j ifStatement
+
+  lyricsToConsole:
+  jal printLyrics              # call function
+  nop
+  j ifStatement 
+
+  lights:
+  andi $7, $5, 0xFFFF
+  sw $7, 0xc($4)
+  j ifStatement
+               
+  endLoop:
+  nop
+  la $10, notesPointer         # putting the notes pointer back to how it was before so that user doesn't have to keep reloading the previous data 
+  li $9, 0x0b4
+  sw $9, 0($10)
+  la $10, lyricsPointer      
+  sw $0, 0($10)               
+  j endLoop
+
+
+# Function: int printLyrics ()
+# Prints a string to the console until it hits \n, and then it will erase everything so far
+# in the console and then carriage return to the start for newline. 
+# This also returns a count of how many characters were printed.
+# Note: because this function does not call any other functions, and does
+# not need to use many registers, it doesn't bother creating a stack frame, and
+# omits all of the prologue and epilogue.
+# Registers used:
+#   r15 - variable to store the pointer for the lyrics, p
+#   r8 -  to hold special address 0x8000000, a
+#   r9 -  status or character from keyboard, c
+#   r16 - temporary register to hold address to lyricsPointer
+#   r11 - temporary register, i
+#   r12 - temporary register, /n
+#   r13 - temporary register, \f
+#   r14 - temporary register, \r
+printLyrics:
+  lui $8, 0x8000            # a = 0x80000000  // used for memory-mapped I/O
+  la $16, lyricsPointer     
+  lw $15, 0($16)            # *p = lyricsPointer 
+  addiu $12, $0, 0x0A       # newline = /n
+  li $13, 0x0C              # formfeed = \f
+  li $14, 0x0D              # carriageReturn = \r
+  sb $13, 8($8) 
+  sb $14, 8($8)
+
+printLyricsLoop:     
+  lb $9, 0($15)             # c = next character from address p
+  beq $9, $0, printStrEnd   # if (c == 0) stop looping
+
+  ifNewline:
+  bne $9, $12, sendToConsole
+  addiu $15, $15, 1
+  sw $15, 0($16)
+  j printStrEnd  
+              
+  sendToConsole:
+  sb $9, 8($8)              # send char c to console
+  addiu $15, $15, 1         # advance p to next address
+  j printLyricsLoop         # repeat above code
+  
+printStrEnd:
+  jr $31                    # return
+

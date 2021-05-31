@@ -1,0 +1,269 @@
+v3.0 hex words plain
+# MIPS data RAM for Logisim
+# Fri May 14 00:25:01 UTC 2021
+# 3 entries for data segment in symbol table
+# segment address symbol source
+#  data  0x00000000       notesPointer  [line 2]
+#  data  0x00000004      lyricsPointer  [line 3]
+#  data  0x00000008     twinkle_lyrics  [line 4]
+00 00 00 b4  # . . . .
+00 00 00 00  # . . . .
+54 77 69 6e  # T w i n
+6b 6c 65 2c  # k l e ,
+20 74 77 69  #   t w i
+6e 6b 6c 65  # n k l e
+2c 20 6c 69  # ,   l i
+74 74 6c 65  # t t l e
+20 73 74 61  #   s t a
+72 20 0a 48  # r   . H
+6f 77 20 49  # o w   I
+20 77 6f 6e  #   w o n
+64 65 72 20  # d e r  
+77 68 61 74  # w h a t
+20 79 6f 75  #   y o u
+20 61 72 65  #   a r e
+20 0a 55 70  #   . U p
+20 61 62 6f  #   a b o
+76 65 20 74  # v e   t
+68 65 20 77  # h e   w
+6f 72 6c 64  # o r l d
+20 73 6f 20  #   s o  
+68 69 67 68  # h i g h
+20 0a 4c 69  #   . L i
+6b 65 20 61  # k e   a
+20 64 69 61  #   d i a
+6d 6f 6e 64  # m o n d
+20 69 6e 20  #   i n  
+74 68 65 20  # t h e  
+73 6b 79 20  # s k y  
+0a 54 77 69  # . T w i
+6e 6b 6c 65  # n k l e
+2c 20 74 77  # ,   t w
+69 6e 6b 6c  # i n k l
+65 2c 20 6c  # e ,   l
+69 74 74 6c  # i t t l
+65 20 73 74  # e   s t
+61 72 20 0a  # a r   .
+48 6f 77 20  # H o w  
+49 20 77 6f  # I   w o
+6e 64 65 72  # n d e r
+20 77 68 61  #   w h a
+74 20 79 6f  # t   y o
+75 20 61 72  # u   a r
+65 00 00 00  # e .
+00 00 C0 30      # NoteOn  (ch:1  note:48 velo:64)
+40 00 00 00      # "Twinkle, twinkle, little star"
+80 00 02 00      # Light on Twinkle
+00 F4 00 3c      # NoteOff (ch:1  note:60 velo:0)
+01 00 80 3c      # NoteOn  (ch:1  note:60 velo:83)
+81 E7 00 40      # Light on twinkle
+01 E7 00 34      # NoteOff (ch:1  note:52 velo:0)
+01 E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+01 F4 00 3c      # NoteOff (ch:1  note:60 velo:0)
+02 00 DA 43      # NoteOn  (ch:1  note:67 velo:90)
+02 00 CD 3c      # NoteOn  (ch:1  note:60 velo:77)    
+02 00 F1 30      # NoteOn  (ch:1  note:48 velo:71)
+02 F4 00 43      # NoteOff (ch:1  note:67 velo:0)
+03 00 D7 43      # NoteOn  (ch:1  note:67 velo:87)
+03 E7 00 3c      # NoteOff (ch:1  note:60 velo:0)      
+03 E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+03 F4 00 43      # NoteOff (ch:1  note:67 velo:0)
+04 00 D6 45      # NoteOn  (ch:1  note:69 velo:86)
+04 00 C9 3c      # NoteOn  (ch:1  note:60 velo:73)
+84 00 00 08      # Light on little
+04 00 c2 29      # NoteOn  (ch:1  note:41 velo:66)
+04 F4 00 45      # NoteOff (ch:1  note:69 velo:0)
+05 00 D3 45      # NoteOn  (ch:1  note:69 velo:83)
+05 E7 00 3c      # NoteOff (ch:1  note:60 velo:0)
+05 E7 00 29      # NoteOff (ch:1  note:41 velo:0)
+05 F4 00 45      # NoteOff (ch:1  note:69 velo:0)
+06 00 D1 43      # NoteOn  (ch:1  note:67 velo:81)
+06 00 CB 3c      # NoteOn  (ch:1  note:60 velo:75)
+06 00 C7 30      # NoteOn  (ch:1  note:48 velo:71)
+86 00 00 02      # Light on star
+07 E7 00 43      # NoteOff (ch:1  note:67 velo:0)
+07 E7 00 3c      # NoteOff (ch:1  note:60 velo:0)
+07 E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+48 00 00 00      # "How I wonder what you are"
+08 00 D0 41      # NoteOn  (ch:1  note:65 velo:80)
+08 00 C6 39      # NoteOn  (ch:1  note:57 velo:70)
+88 00 02 00      # Lights on How
+08 00 C4 29      # NoteOn  (ch:1  note:41 velo:68)
+08 F4 00 41      # NoteOff (ch:1  note:65 velo:0)
+89 00 01 00      # Lights on I
+09 00 D5 41      # NoteOn  (ch:1  note:65 velo:85)
+09 E7 00 39      # NoteOff (ch:1  note:57 velo:0)
+09 E7 00 29      # NoteOff (ch:1  note:41 velo:0)
+09 F4 00 41      # NoteOff (ch:1  note:65 velo:0)
+0A 00 D2 40      # NoteOn  (ch:1  note:64 velo:82)
+0A 00 C5 37      # NoteOn  (ch:1  note:55 velo:69)
+8A 00 00 80      # Lights on wonder
+0A 00 CC 30      # NoteOn  (ch:1  note:48 velo:76)
+0A F4 00 40      # NoteOff (ch:1  note:64 velo:0)
+0B 00 D4 40      # NoteOn  (ch:1  note:64 velo:84)
+0B E7 00 37      # NoteOff (ch:1  note:55 velo:0)
+0B E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+0B F4 00 40      # NoteOff (ch:1  note:64 velo:0)
+0C 00 D1 3E      # NoteOn  (ch:1  note:62 velo:81)
+0C 00 C7 37      # NoteOn  (ch:1  note:55 velo:71)
+8C 00 00 20      # Lights on what
+0C 00 C5 2B      # NoteOn  (ch:1  note:43 velo:69)
+0C F4 00 3E      # NoteOff (ch:1  note:62 velo:0)
+8D 00 00 08      # Lights on You
+0D 00 D3 3E      # NoteOn  (ch:1  note:62 velo:83)
+0D E7 00 37      # NoteOff (ch:1  note:55 velo:0)
+0D E7 00 2B      # NoteOff (ch:1  note:43 velo:0)
+8D E7 00 04      # Lights on are
+0D F4 00 3E      # NoteOff (ch:1  note:62 velo:0)
+0E 00 D1 3C      # NoteOn  (ch:1  note:60 velo:81)
+0E 00 C7 34      # NoteOn  (ch:1  note:52 velo:71)
+0E 00 CB 30      # NoteOn  (ch:1  note:48 velo:75)
+0F E7 00 3C      # NoteOff (ch:1  note:60 velo:0)
+0F E7 00 34      # NoteOff (ch:1  note:52 velo:0)
+0F E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+50 00 00 00      # "Up above the world so high"
+10 00 DE 43      # NoteOn  (ch:1  note:67 velo:94)
+10 00 D0 3C      # NoteOn  (ch:1  note:60 velo:80)
+10 00 C8 30      # NoteOn  (ch:1  note:48 velo:72)
+90 00 02 00      # Lights on up
+10 F4 00 43      # NoteOff (ch:1  note:67 velo:0)
+91 00 01 00      # Lights on above
+11 00 D3 43      # NoteOn  (ch:1  note:67 velo:83)
+11 E7 00 3C      # NoteOff (ch:1  note:60 velo:0)
+11 E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+11 F4 00 43      # NoteOff (ch:1  note:67 velo:0)
+12 00 D1 41      # NoteOn  (ch:1  note:65 velo:81)
+12 00 C7 39      # NoteOn  (ch:1  note:57 velo:71)
+12 00 C4 29      # NoteOn  (ch:1  note:41 velo:68)
+12 F4 00 41      # NoteOff (ch:1  note:65 velo:0)
+93 00 00 40      # Lights on the
+13 00 D4 41      # NoteOn  (ch:1  note:65 velo:84)
+13 E7 00 39      # NoteOff (ch:1  note:57 velo:0)
+13 E7 00 29      # NoteOff (ch:1  note:41 velo:0)
+13 F4 00 41      # NoteOff (ch:1  note:65 velo:0)
+94 00 00 20      # Lights on world
+14 00 D2 40      # NoteOn  (ch:1  note:64 velo:82)
+14 00 C6 37      # NoteOn  (ch:1  note:55 velo:70)
+14 00 C9 2B      # NoteOn  (ch:1  note:43 velo:73)
+14 F4 00 40      # NoteOff (ch:1  note:64 velo:0)
+95 00 00 08      # Lights on so
+15 00 D4 40      # NoteOn  (ch:1  note:64 velo:84)
+15 E7 00 37      # NoteOff (ch:1  note:55 velo:0)
+15 E7 00 2B      # NoteOff (ch:1  note:43 velo:0)
+15 F4 00 40      # NoteOff (ch:1  note:64 velo:0)
+96 00 00 02      # Lights on high
+16 00 D2 3E      # NoteOn  (ch:1  note:62 velo:82)
+16 00 C3 37      # NoteOn  (ch:1  note:55 velo:67)
+16 00 C8 2B      # NoteOn  (ch:1  note:43 velo:72)
+17 E7 00 3E      # NoteOff (ch:1  note:62 velo:0)
+17 E7 00 37      # NoteOff (ch:1  note:55 velo:0)
+17 E7 00 2B      # NoteOff (ch:1  note:43 velo:0)
+58 00 00 00      # "Like a diamond in the sky"
+98 00 02 00      # Lights on Like
+18 00 DA 43      # NoteOn  (ch:1  note:67 velo:90)
+18 00 CC 3C      # NoteOn  (ch:1  note:60 velo:76)
+18 00 C9 30      # NoteOn  (ch:1  note:48 velo:73)
+18 F4 00 43      # NoteOff (ch:1  note:67 velo:0)
+99 00 01 00      # Lights on a
+19 00 D4 43      # NoteOn  (ch:1  note:67 velo:84)
+19 E7 00 3C      # NoteOff (ch:1  note:60 velo:0)
+19 E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+99 E7 00 40      # Lights on diamond
+19 F4 00 43      # NoteOff (ch:1  note:67 velo:0)
+1A 00 D4 41      # NoteOn  (ch:1  note:65 velo:84)
+1A 00 C7 39      # NoteOn  (ch:1  note:57 velo:71)
+1A 00 C4 29      # NoteOn  (ch:1  note:41 velo:68)
+1A F4 00 41      # NoteOff (ch:1  note:65 velo:0)
+1B 00 D5 41      # NoteOn  (ch:1  note:65 velo:85)
+1B E7 00 39      # NoteOff (ch:1  note:57 velo:0)
+1B E7 00 29      # NoteOff (ch:1  note:41 velo:0)
+1B F4 00 41      # NoteOff (ch:1  note:65 velo:0)
+1C 00 D2 40      # NoteOn  (ch:1  note:64 velo:82)
+1C 00 C6 37      # NoteOn  (ch:1  note:55 velo:70)
+1C 00 C9 2B      # NoteOn  (ch:1  note:43 velo:73)
+9C 00 00 10      # Lights on in 
+1C F4 00 40      # NoteOff (ch:1  note:64 velo:0)
+1D 00 D2 40      # NoteOn  (ch:1  note:64 velo:82)
+9D 00 00 08      # Lights on the 
+1D E7 00 37      # NoteOff (ch:1  note:55 velo:0)
+1D E7 00 2B      # NoteOff (ch:1  note:43 velo:0)
+1D F4 00 40      # NoteOff (ch:1  note:64 velo:0)
+1E 00 D3 3E      # NoteOn  (ch:1  note:62 velo:83)
+1E 00 C6 37      # NoteOn  (ch:1  note:55 velo:70)
+1E 00 C5 2B      # NoteOn  (ch:1  note:43 velo:69)
+9E 00 00 04      # Lights on sky
+1F E7 00 3E      # NoteOff (ch:1  note:62 velo:0)
+1F E7 00 37      # NoteOff (ch:1  note:55 velo:0)
+1F E7 00 2B      # NoteOff (ch:1  note:43 velo:0)
+60 00 00 00      # "Twinkle, twinkle, little star"
+A0 00 02 00      # Lights on Twinkle
+20 00 D2 3C      # NoteOn  (ch:1  note:60 velo:82)
+20 00 C5 34      # NoteOn  (ch:1  note:52 velo:69)
+20 00 C9 30      # NoteOn  (ch:1  note:48 velo:73)
+20 F4 00 3C      # NoteOff (ch:1  note:60 velo:0)
+21 00 D3 3C      # NoteOn  (ch:1  note:60 velo:83)
+A1 E7 00 40      # Lights on twinkle
+21 E7 00 34      # NoteOff (ch:1  note:52 velo:0)
+21 E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+21 F4 00 3C      # NoteOff (ch:1  note:60 velo:0)
+22 00 DA 43      # NoteOn  (ch:1  note:67 velo:90)
+22 00 D0 3C      # NoteOn  (ch:1  note:60 velo:80)
+22 00 C8 30      # NoteOn  (ch:1  note:48 velo:72)
+22 F4 00 43      # NoteOff (ch:1  note:67 velo:0)
+23 00 D3 43      # NoteOn  (ch:1  note:67 velo:83)
+23 E7 00 3C      # NoteOff (ch:1  note:60 velo:0)
+23 E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+23 F4 00 43      # NoteOff (ch:1  note:67 velo:0)
+24 00 D7 45      # NoteOn  (ch:1  note:69 velo:87)
+24 00 C5 3C      # NoteOn  (ch:1  note:60 velo:69)
+24 00 C4 29      # NoteOn  (ch:1  note:41 velo:68)
+A4 00 00 08      # Lights on little
+24 F4 00 45      # NoteOff (ch:1  note:69 velo:0)
+25 00 D1 45      # NoteOn  (ch:1  note:69 velo:81)
+25 E7 00 3C      # NoteOff (ch:1  note:60 velo:0)
+25 E7 00 29      # NoteOff (ch:1  note:41 velo:0)
+25 F4 00 45      # NoteOff (ch:1  note:69 velo:0)
+26 00 CF 43      # NoteOn  (ch:1  note:67 velo:79)
+26 00 C8 3C      # NoteOn  (ch:1  note:60 velo:72)
+26 00 C9 30      # NoteOn  (ch:1  note:48 velo:73)
+A6 00 00 02      # Lights on star
+27 E7 00 43      # NoteOff (ch:1  note:67 velo:0)
+27 E7 00 3C      # NoteOff (ch:1  note:60 velo:0)
+27 E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+68 00 00 00      # "How I wonder what you are"
+A8 00 02 00      # Lights on how
+28 00 D1 41      # NoteOn  (ch:1  note:65 velo:81)
+28 00 C5 39      # NoteOn  (ch:1  note:57 velo:69)
+28 00 C4 29      # NoteOn  (ch:1  note:41 velo:68)
+28 F4 00 41      # NoteOff (ch:1  note:65 velo:0)
+A9 00 01 00      # Lights on I 
+29 00 D3 41      # NoteOn  (ch:1  note:65 velo:83)
+29 E7 00 39      # NoteOff (ch:1  note:57 velo:0)
+29 E7 00 29      # NoteOff (ch:1  note:41 velo:0)
+29 F4 00 41      # NoteOff (ch:1  note:65 velo:0)
+2A 00 D1 40      # NoteOn  (ch:1  note:64 velo:81)
+2A 00 C6 37      # NoteOn  (ch:1  note:55 velo:70)
+2A 00 CB 30      # NoteOn  (ch:1  note:48 velo:75)
+AA 00 00 80      # Lights on wonder 
+2A F4 00 40      # NoteOff (ch:1  note:64 velo:0)
+2B 00 D4 40      # NoteOn  (ch:1  note:64 velo:84)
+2B E7 00 37      # NoteOff (ch:1  note:55 velo:0)
+2B E7 00 30      # NoteOff (ch:1  note:48 velo:0)
+2B F4 00 40      # NoteOff (ch:1  note:64 velo:0)
+2C 00 D2 3E      # NoteOn  (ch:1  note:62 velo:82)
+2C 00 C7 37      # NoteOn  (ch:1  note:55 velo:71)
+2C 00 C5 2B      # NoteOn  (ch:1  note:43 velo:69)
+AC 00 00 20      # Lights on what
+2C F4 00 3E      # NoteOff (ch:1  note:62 velo:0)
+AD 00 00 08      # Lights on You
+2D 00 D3 3E      # NoteOn  (ch:1  note:62 velo:83)
+2D E7 00 37      # NoteOff (ch:1  note:55 velo:0)
+2D E7 00 2B      # NoteOff (ch:1  note:43 velo:0)
+AD E7 00 04      # Lights on are
+2D F4 00 3E      # NoteOff (ch:1  note:62 velo:0)
+2E 00 D0 3C      # NoteOn  (ch:1  note:60 velo:80)
+2E 00 D6 34      # NoteOn  (ch:1  note:52 velo:70)
+2E 00 DA 30      # NoteOn  (ch:1  note:48 velo:74)
+2F E7 00 3C      # NoteOff (ch:1  note:60 velo:0)
+2F E7 00 34      # NoteOff (ch:1  note:52 velo:0)
+2F E7 00 30      # NoteOff (ch:1  note:48 velo:0)
