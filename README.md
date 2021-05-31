@@ -9,5 +9,4 @@ Contirbutors: The Harvard Architeture style MIPS machine was provided to me by m
 ** Warning ** 
   For some reason, the MIDI audio device lags on mac, but works perfectly fine on windows.
   
-
-[Uploading Karaoke_machine.MOV.zip…]()
+The following link is a video of how the machine works: 
